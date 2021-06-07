@@ -1,0 +1,135 @@
+
+body{
+  background-color: burlywood;
+  color: black;
+  background-color: #7de9e3;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239aac92' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+font-size: 16px;
+font-family: 'Oswald', sans-serif;
+margin: 10 auto;
+flex-wrap: wrap;
+}
+h1{
+  font-size: 20px;
+  background: #f5abc9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h3{
+  background: #f5abc9;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+}
+p{
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  margin: 0 10px;
+}
+li {
+  margin: 0 5px;
+  justify-content:space-between; 
+  display:inline-block;
+  background: #9f5f80;
+  color: #6600ff;
+  text-decoration:none;
+  margin-bottom:0 auto;
+  width: 40%;
+  margin: 10px;  
+  align-items: center;
+}
+ul{
+  justify-content: center;
+}
+li{
+  display:inline-block;
+  justify-content: center;
+}
+.nav-enlace{
+  display:inline-table;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+}
+.nav-enlace:hover{
+  background:#fa9905;
+  width: 15%;
+  flex-wrap: wrap;
+}
+.nav-boton{
+  background: #9f5f80;
+  color:#6600ff;
+  padding: 20px;
+  justify-content: center;
+  border: 2px solid #f5abc9;
+  display: none;
+}
+
+@media (max-width:600px) {
+  li{
+    background: rgb(23, 139, 0);
+    display: flex;
+    flex-direction:column;
+}
+.nav-enlace{
+  margin: 5px 1;
+}
+.nav-boton{
+  display: inline-block;
+}
+.desaparece{
+  display: none;
+} 
+}
+
+.oferta flex text-center{
+  margin: 0 auto;
+  width: 90px;
+}
+.oferta{
+  margin: 0 auto;
+  width: 200px;
+}
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+}
+.text-center{
+  text-align: center;
+}
+.precio{
+  font-size: 50px;
+  color: #9f5f80;
+}
+.columna{
+  background: rgb(238,238,238);
+  color:#333;
+  border: 1px solid #333;
+  margin:0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px royalblue;
+  box-sizing: border-box;
+}
+.btn-precio{
+  background: salmon;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration:none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.btn-precio:hover{
+  background:rgb(209, 46, 46);
+}
+.imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+}

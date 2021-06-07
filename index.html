@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Mania</title>
+<!--font awesone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!--font oswald-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <!--custom css-->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+     <nav class="nav-main">
+        <h1>Dog Mania </h1>
+        <p>Tienda de <b>alimentos</b> y <b> accesorios</b> para caninos</p>
+        <p>
+            <b>
+                <i>Love Pet</i>
+            </b>
+        </p>
+        <footer class="bg-dark text-center"></footer>
+        <div class="imagen">
+        <img src="imagen/doglog.jpg" alt="index" class="img.fluid rounded-3"width="70"height="70">
+        </div> 
+        <hr> 
+        <ul>
+                <li>
+                    <button class="nav-boton" onclick="accion()"> Menu </button>
+                </li>
+                <li>
+                    <a href="#" class="nav-enlace desaparece">Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-enlace desaparece">Nosotros
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-enlace desaparece">Alimentos
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-enlace desaparece">Accesorios
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-enlace desaparece">Contacto
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#" class="nav-enlace">
+                        <i class="fa fa-search">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+     </nav>
+    </div>  
+    <script>
+        function accion(){
+            console.log("Esta funcionando mi boton");
+            var ancla = document.getElementsByClassName("nav-enlace");
+            for (var i= 0;i <ancla.length;i++) {
+                ancla[i].classList.toggle("desaparece");
+            }
+        }
+    </script> 
+    <section class="oferta flex text-center">
+        <div class="columna">
+        <h3>Oferta del mes</h3>
+        <p class="precio">$2200</p>
+        <hr>
+        <p>Natural Meet</p>
+        <p>15 kg de alimento</p>
+        <hr>
+        <a href="#"class="btn-precio">Comprar</a>
+    </div>
+    <p></p>
+    <a href="#">Mas Info <i class="fas fa-angle-double-right"></i></a>
+    </section>
+</body>
+</html>
