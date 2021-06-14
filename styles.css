@@ -70,9 +70,12 @@ li{
 
 @media (max-width:600px) {
   li{
+    clear: both;
+    text-align:inline;
     background: rgb(23, 139, 0);
-    display: flex;
+    display:flex;
     flex-direction:column;
+    justify-content: center;
 }
 .nav-enlace{
   margin: 5px 1;
@@ -132,4 +135,10 @@ li{
   align-items: center;
   padding: 20px;
   height: 50px;
+}
+.pie{
+  clear: both;
+  text-align: right;
+  padding: 20px;
+  border-top: 2px solid rgba(153, 8, 8, 0.6);
 }
